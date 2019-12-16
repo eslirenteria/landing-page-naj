@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <!-- Tema principal: Comidas tipicas de Mexico -->
@@ -15,10 +16,91 @@
     <!-- Portafolio content -->
     
     <!-- About Section -->
-    <!-- Contact Section -->
-    <!-- Footer section -->
+    <section id="about">
+        <div class="jumbotron bg-dark">
+            <div class="container">
+                <h1 class="display-4 text-white text-center mb-5"><b>ABOUT</b></h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores, quod tempore quisquam voluptatum quos dolor! Nisi perspiciatis ab corrupti numquam assumenda quod commodi, sint hic aliquam deserunt distinctio tempore.
+                        </h4>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit deserunt eveniet quia aliquam numquam esse enim, eum officiis at repellendus sapiente cupiditate in placeat laboriosam voluptatum, vitae eos aspernatur.
+                        </h4>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
 
-    <!-- pequeño cambio -->
-    <!-- otro pequeño cambio -->
+    <style>
+        @media (max-width: 767.98px) {
+            #rowXD {
+                margin: 0;               
+            }
+        }
+    </style>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="jumbotron bg-white">
+            <div class="container">
+                <h1 class="display-4 text-center mb-5"><b>CONTACT ME</b></h1>
+                <form>
+                    <div class="row"  id="rowXD">
+                        <div class="col-lg-12 mb-3">
+                            <label for="name"><h3>Name</h3></label>
+                            <input type="text" id="name" class="form-control form-control-lg" placeholder="Enter name">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <label for="email"><h3>Email Address</h3></label>
+                            <input type="text" id="email" class="form-control form-control-lg" placeholder="Enter email address">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <label for="phone"><h3>Phone Number</h3></label>
+                            <input type="text" id="phone" class="form-control form-control-lg" placeholder="Enter phone number">
+                        </div>                 
+                        <div class="col-lg-12 mb-3">
+                            <label for="message"><h3>Message</h3></label>
+                            <textarea type="text" id="message" class="form-control form-control-lg" placeholder="Enter message"></textarea>
+                        </div>
+                        <div class="col-lg-12 mb-3 text-center">
+                            <button class="btn btn-primary btn-lg"><h3>Send</h3></button>
+                        </div>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </section>
+    
+    <!-- Footer section -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row py-5 text-center">
+                <div class="col-lg-4 col-md-4 text-white mb-3">
+                    <h3>Section 1</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, cupiditate omnis. Quia ad exercitationem quasi ab beatae, doloribus dolores explicabo ducimus? Dolorum pariatur ab totam! Nostrum praesentium veniam sed itaque.
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-4 text-white mb-3">
+                    <h3>Section 2</h3>
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sint maiores tempora corporis perspiciatis, totam recusandae cupiditate in, expedita tempore nihil omnis, eaque unde eligendi sunt ducimus ipsa aperiam. Nesciunt?
+                    </span>
+                </div>
+                <div class="col-lg-4 col-md-4 text-white">
+                    <h3>Section 3</h3>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam est sint molestiae soluta, possimus voluptate nesciunt mollitia a dolor quisquam blanditiis rerum deserunt ipsum recusandae sunt! Excepturi voluptas at earum?
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
