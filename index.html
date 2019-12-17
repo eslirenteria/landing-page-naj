@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
 </head>
 <body>
     <!-- Tema principal: Comidas tipicas de Mexico -->
@@ -12,6 +15,81 @@
     <!-- Start Section -->
 
     <!-- Portafolio -->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            
+            <!-- Hedaer -->
+            <h2 class="page-section-heading text-center">Top Mexican food</h2>
+
+            <!-- Grid -->
+            <div id="portfolioItems" class="row align-items-center text-center">
+                
+        </div>
+    </section>
+
+    <script>
+
+        var pItems = document.getElementById("portfolioItems");
+        var portfolioItems = [];
+        var items = [
+            {
+                name: 'Pozole',
+                type: 'Caldo',
+                origin: 'México',
+                ingredients: 'Granos de maíz y carne',
+                desc: 'El pozole (del náhuatl pozolli, de tlapozonalli, «hervido» o «espumoso»,​ o del cahíta posoli, «cocer maíz») es un plato tradicional mesoamericano, un caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.1​ De esta preparación básica existen variaciones por todo el territorio mexicano y algunas cocinas de América Central. Por ejemplo, en México el pozole verde es del estado de Guerrero y el rojo de Sonora, Sinaloa, Nayarit, Guanajuato, Jalisco y Tlaxcala.2 A este versátil platillo se le puede acompañar con diversos ingredientes, que varían según la zona y costumbres. En América del Sur existe un plato con el cual guarda parecido, llamado patasca.'
+            },{
+                name: 'Tacos',
+                type: 'Garnacha - Comida rápida',
+                origin: 'México',
+                ingredients: 'Tortilla de maíz y carne',
+                desc: 'Un taco es una preparación mexicana que en su forma estándar consiste en una tortilla enrollada (generalmente de maíz, también de harina de trigo, de nopal o de algún otro ingrediente) que contiene algún alimento encima y algún tipo de salsa. Es considerado como uno de los platillos más representativos de la comida mexicana'
+            },{
+                name: 'Chile en nogada',
+                type: 'Gurmet',
+                origin: 'México - Puebla',
+                ingredients: 'Chile poblano, guiso y granada roja',
+                desc: 'El chile en nogada (más comúnmente chiles en nogada, en plural, a pesar de que no suele servirse más que un único chile) es uno de los platillos típicos de la gastronomía del estado de Puebla. Ha sido llamado el "platillo poblano por excelencia".1​ Se prepara con chile poblano relleno de un guisado de picadillo y frutas, que incluye acitrón y que se cubre con salsa de nuez (nogada), perejil y granada. Los colores del chile poblano, de la crema y de la granada simboliza los de la bandera de México.'
+            },{
+                name: 'Guacamole',
+                type: 'Salsa',
+                origin: 'México',
+                ingredients: 'Aguacate, sal, limon, queso(opcional), verdura variada(opcional)',
+                desc: 'El guacamole o guacamol es una salsa mexicana preparada a base de aguacate o palta y chile verde.[cita requerida] El nombre guacamole proviene del náhuatl Ahuacamolli traducido al español, que se compone de las palabras Ahuacatl (aguacate) + molli (mole o salsa). El aguacate tenía una significación erótica para los aztecas, tanto que las mujeres no podían realizar la recolección de los frutos,[cita requerida] ya que simbolizaban los testículos.1​2​ Según la mitología prehispánica, Quetzalcoatl, el dios tolteca, ofreció la receta del guacamole a su pueblo, quienes la extendieron por el territorio de Mesoamérica.'
+            },{
+                name: 'Enchilada',
+                type: 'Comida corrida',
+                origin: 'México',
+                ingredients: 'Tortilla de maíz, pollo, verdura variada',
+                desc: 'El pozole (del náhuatl pozolli, de tlapozonalli, «hervido» o «espumoso»,​ o del cahíta posoli, «cocer maíz») es un plato tradicional mesoamericano, un caldo hecho a base de granos de maíz de un tipo conocido comúnmente como cacahuazintle, a la que se agrega, según la región, carne de pollo o de cerdo como ingrediente secundario.1​ De esta preparación básica existen variaciones por todo el territorio mexicano y algunas cocinas de América Central. Por ejemplo, en México el pozole verde es del estado de Guerrero y el rojo de Sonora, Sinaloa, Nayarit, Guanajuato, Jalisco y Tlaxcala.2 A este versátil platillo se le puede acompañar con diversos ingredientes, que varían según la zona y costumbres. En América del Sur existe un plato con el cual guarda parecido, llamado patasca.'
+            },{
+                name: 'Sopes',
+                type: 'Caldo',
+                origin: 'México',
+                ingredients: 'Granos de maíz y carne',
+                desc: 'Los sopes, pellizcadas, picadas o picaditas son una comida mexicana, consistente de una Tortilla de maíz gruesa, originalmente frita con manteca, sobre la que se añaden diferentes ingredientes, como chicharrón o carne, además de queso, verduras y salsa picante, con variaciones regionales.'
+            }
+
+        ];
+
+        //console.log(items.length);
+        
+        for(var i = 0; i < items.length; i++){
+            portfolioItems.push(`
+                 <div class="col-sm-12 col-md-6 col-lg-4 my-2 d-flex">
+                    <div data-toggle="modal" data-target = "#modal${i+1}">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid rounded-lg" src="img/portfolio/${items[i].name.toLocaleLowerCase()}.jpg">
+                    </div>
+                </div>
+        `);
+        }
+        pItems.innerHTML = portfolioItems.join('');
+    </script>
     <!-- Portafolio content -->
     
     <!-- About Section -->
