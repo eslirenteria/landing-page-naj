@@ -1,10 +1,20 @@
 .navbar {
+  display: none;
+}
+.navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+  }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
   }
 
   #mainNav {
@@ -18,12 +28,6 @@
     background-color: #02813E !important;
   }
 
-  #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
-  }
   
   #mainNav .navbar-brand {
     color: #fff;
@@ -38,7 +42,7 @@
   }
   
   #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: /*#1abc9c*/ #02813E;
+    color: #02813E;
   }
   
   #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -84,11 +88,45 @@
     }
   }
 
-  a.bg-primary:hover, a.bg-primary:focus,
+
+a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: /*#148f77*/ #02813E !important;
+  background-color: #02813E !important;
 }
+
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
+
 .portfolio {
     margin-bottom: -30px;
 }
